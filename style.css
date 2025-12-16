@@ -1,0 +1,35 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header, footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1em;
+}
+
+.box {
+  background-color: #f0f0f0;
+  padding: 2em;
+  margin: 0.5em;
+  flex: 1;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+/* Responsive layout for screens smaller than 720px */
+@media (max-width: 719px) {
+  .container {
+    flex-direction: column;
+  }
+}
